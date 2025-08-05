@@ -116,15 +116,15 @@
             </div>
             <div>
                 <label for="onePhase" class="block text-gray-700 text-sm font-medium mb-2">1 Phase:</label>
-                <input type="text" id="onePhase" name="OnePhase" class="form-input" placeholder="1 Phase Value" required>
+                <input type="text" id="onePhase" name="OnePhase" class="form-input" placeholder="Number" required>
             </div>
             <div>
                 <label for="threePhase" class="block text-gray-700 text-sm font-medium mb-2">3 Phase:</label>
-                <input type="text" id="threePhase" name="ThreePhase" class="form-input" placeholder="3 Phase Value" required>
+                <input type="text" id="threePhase" name="ThreePhase" class="form-input" placeholder="Number" required>
             </div>
             <div>
                 <label for="gateway" class="block text-gray-700 text-sm font-medium mb-2">Gateway:</label>
-                <input type="text" id="gateway" name="Gateway" class="form-input" placeholder="Gateway Information" required>
+                <input type="text" id="gateway" name="Gateway" class="form-input" placeholder="Gateways Installed" required>
             </div>
             <div>
                 <label for="message" class="block text-gray-700 text-sm font-medium mb-2">Message:</label>
@@ -178,7 +178,7 @@
 
                 if (result.status === 'success') {
                     messageBox.classList.add('success');
-                    messageBox.textContent = 'Data submitted successfully!';
+                    messageBox.textContent = 'Data recorded successfully!';
                     form.reset(); // Clear the form
                 } else {
                     throw new Error(result.message || 'Failed to submit data.');
